@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="2"
-          android:versionName="1.0.0-SNAPSHOT"
-          package="io.pivotal.labsboot">
+    package="io.pivotal.labsboot"
+    android:versionCode="2"
+    android:versionName="1.0.0-SNAPSHOT" >
 
-    <application android:name=".AndroidBootApplication">
-        <activity android:name=".example.AndroidBootActivity" android:screenOrientation="portrait">
+    <application android:name=".AndroidBootApplication" >
+        <activity
+            android:name=".example.AndroidBootActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BoozeActivity"
+            android:label="@string/title_activity_list_booze" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
+
 </manifest>
