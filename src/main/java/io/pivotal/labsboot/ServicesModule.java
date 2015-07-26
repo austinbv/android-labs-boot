@@ -1,5 +1,8 @@
 package io.pivotal.labsboot;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -20,6 +23,11 @@ public class ServicesModule {
 
     @Provides
     ProductService providesProductService() {
-        return new ProductService();
+        try {
+            return new ProductService(new URL(""));
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

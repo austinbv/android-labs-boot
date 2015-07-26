@@ -24,7 +24,8 @@ android {
     }
 
     packagingOptions {
-        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
     }
 }
 
@@ -33,11 +34,18 @@ dependencies {
         jcenter()
     }
 
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+
     //Dagger
     compile 'com.squareup.dagger:dagger:1.2.2'
     provided 'com.squareup.dagger:dagger-compiler:1.2.2'
 
+    compile 'com.fasterxml.jackson.core:jackson-core:2.6.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.0'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.0'
+
     testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.okhttp:mockwebserver:2.4.0'
     testCompile 'org.robolectric:robolectric:3.0-rc2'
     testCompile 'com.squareup:fest-android:1.0.8'
     testCompile 'org.mockito:mockito-core:2.0.5-beta'
