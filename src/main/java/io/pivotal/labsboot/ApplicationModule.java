@@ -7,7 +7,7 @@ import dagger.Provides;
 
 @Module(
         includes = {
-                io.pivotal.labsboot.example.AndroidBootModule.class
+                io.pivotal.labsboot.ServicesModule.class
         },
         library = true,
         complete = false

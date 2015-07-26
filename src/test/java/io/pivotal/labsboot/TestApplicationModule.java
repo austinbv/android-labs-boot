@@ -10,7 +10,8 @@ import io.pivotal.labsboot.example.TestAndroidBootModule;
 
 @Module(
         includes = {
-                io.pivotal.labsboot.example.TestAndroidBootModule.class
+                TestAndroidBootModule.class,
+                TestServicesModule.class
         },
         library = true,
         complete = false
