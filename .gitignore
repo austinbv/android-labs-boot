@@ -1,4 +1,5 @@
 *.iml
+*_id_rsa*
 .idea/
 build
 .gradle
