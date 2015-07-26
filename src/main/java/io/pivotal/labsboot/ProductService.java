@@ -27,7 +27,7 @@ public class ProductService {
         OkHttpClient okHttpClient = new OkHttpClient();
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        Request request = new Request.Builder().url(baseUrl).build();
+        Request request = new Request.Builder().url(baseUrl + "/products").build();
 
         try {
             response = okHttpClient.newCall(request).execute();

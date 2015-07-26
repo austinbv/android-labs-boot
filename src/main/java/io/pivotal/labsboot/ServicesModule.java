@@ -24,7 +24,7 @@ public class ServicesModule {
     @Provides
     ProductService providesProductService() {
         try {
-            return new ProductService(new URL(""));
+            return new ProductService(new URL("http://lcboapi.com"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
