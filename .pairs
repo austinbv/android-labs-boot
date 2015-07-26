@@ -3,6 +3,7 @@ pairs:
   # <initials>: <Firstname> <Lastname>[; <email-id>]
   av: austinbv
   kl: kaayell;
+  ct: chelseatroy;
 email:
   prefix: pair
   domain: pivotallabs.com
